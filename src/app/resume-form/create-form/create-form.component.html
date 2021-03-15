@@ -1,1 +1,16 @@
-<p>create-form works!</p>
+<form [formGroup]="profileForm">
+  <div formGroupName="name">
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName" />
+    </label>
+    <label>
+      Middle Name:
+      <input type="text" formControlName="middleName" />
+    </label>
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName" />
+    </label>
+  </div>
+</form>
