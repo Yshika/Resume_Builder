@@ -1,16 +1,55 @@
 <form [formGroup]="profileForm">
-  <div formGroupName="name">
+  <div class="form-group" formGroupName="name">
     <label>
       First Name:
-      <input type="text" formControlName="firstName" />
+      <input type="text" class="form-control" formControlName="firstName" />
     </label>
     <label>
       Middle Name:
-      <input type="text" formControlName="middleName" />
+      <input type="text" class="form-control" formControlName="middleName" />
     </label>
     <label>
       Last Name:
-      <input type="text" formControlName="lastName" />
+      <input type="text" class="form-control" formControlName="lastName" />
     </label>
   </div>
+  <br/>
+  <div class="form-group" formGroupName="education">
+      <label>
+          Degree:
+          <input type="text" class="form-control" formControlName="degree">
+      </label>
+      <label>
+          Branch:
+          <input type="text" class="form-control" formControlName="branch">
+      </label>
+      <label>
+          CGPA:
+          <input type="text" class="form-control" formControlName="cgpa">
+      </label>
+      <label>
+          College:
+          <input type="text" class="form-control" formControlName="college">
+      </label>
+  </div>
+  <br/>
+  <div class="form-group" formGroupName="address">
+    <label>
+        Street:
+        <input type="text" class="form-control" formControlName="street">
+    </label>
+    <label>
+        Location:
+        <input type="text" class="form-control" formControlName="location">
+    </label>
+    <label>
+        ZIP Code:
+        <input type="number" class="form-control" formControlName="zip">
+    </label>
+  </div>
+  <br/>
+  <label>
+      Phone:
+      <input type="number" class="form-control" formControlName="phone">
+  </label>
 </form>
