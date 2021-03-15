@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create-form',
@@ -11,22 +11,22 @@ export class CreateFormComponent implements OnInit {
 
   profileForm = this.fb.group({
     name: this.fb.group({
-      firstName: [''],
+      firstName: ['', [Validators.required]],
       middleName: [''],
-      lastName: [''],
+      lastName: ['', [Validators.required]],
     }),
     education: this.fb.group({
-      degree: [''],
-      branch: [''],
-      cgpa: [''],
-      college: [''],
+      degree: ['', [Validators.required]],
+      branch: ['', [Validators.required]],
+      cgpa: ['', [Validators.required]],
+      college: ['', [Validators.required]],
     }),
     address: this.fb.group({
-      street: [''],
-      location: [''],
-      zip: [''],
+      street: ['', [Validators.required]],
+      location: ['', [Validators.required]],
+      zip: ['', [Validators.required]],
     }),
-    phone: [''],
+    phone: ['', [Validators.required]],
   });
   ngOnInit(): void {}
 }
