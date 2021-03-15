@@ -6,13 +6,15 @@ import { CreateFormComponent } from './create-form/create-form.component';
 import { UpdateFormComponent } from './update-form/update-form.component';
 import { DeleteFormComponent } from './delete-form/delete-form.component';
 import { ViewFormComponent } from './view-form/view-form.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [CreateFormComponent, UpdateFormComponent, DeleteFormComponent, ViewFormComponent],
-  imports: [
-    CommonModule,
-    ResumeFormRoutingModule
-  ]
+  declarations: [
+    CreateFormComponent,
+    UpdateFormComponent,
+    DeleteFormComponent,
+    ViewFormComponent,
+  ],
+  imports: [CommonModule, ResumeFormRoutingModule, ReactiveFormsModule],
 })
-export class ResumeFormModule { }
+export class ResumeFormModule {}
