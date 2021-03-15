@@ -28,5 +28,8 @@ export class CreateFormComponent implements OnInit {
     }),
     phone: [''],
   });
+  onSubmit(){
+    console.log("Form saved");
+  }
   ngOnInit(): void {}
 }
